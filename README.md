@@ -53,6 +53,10 @@ Start with the problem you are trying to diagnose.
 - Use the script only after the methodology is clear.
 - Treat outputs as evidence for a decision, not as the decision itself.
 
+## Example output
+
+See [`examples/example-output.md`](examples/example-output.md) for mock validator outputs showing UTM taxonomy findings, funnel-data checks, severity levels, and recommended fixes.
+
 ## Design philosophy
 
 - **Methodology first, code second** — the README explains the thinking; the script automates the execution
