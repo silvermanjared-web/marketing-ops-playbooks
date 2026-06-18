@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+secrets.*
+credentials.*
+token.*
+
+# Data exports and private inputs
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.jsonl
+exports/
+private/
+local-data/
+
+# Generated output
+output/
+outputs/
+reports/
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
