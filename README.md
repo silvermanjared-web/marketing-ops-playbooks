@@ -69,6 +69,12 @@ Start with the problem you are trying to diagnose.
 
 See [`examples/example-output.md`](examples/example-output.md) for mock validator outputs showing UTM taxonomy findings, funnel-data checks, severity levels, and recommended fixes.
 
+## Related repos
+
+- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os) — the operating-system hub that explains the broader growth architecture.
+- [`marketing-ops-toolkit`](https://github.com/silvermanjared-web/marketing-ops-toolkit) — practical scripts and tools that can operationalize these playbooks.
+- [`marketing-intelligence-agent`](https://github.com/silvermanjared-web/marketing-intelligence-agent) — the intelligence layer that can turn playbook findings into prioritized briefings.
+
 ## Design philosophy
 
 - **Methodology first, code second** — the README explains the thinking; the script automates the execution
