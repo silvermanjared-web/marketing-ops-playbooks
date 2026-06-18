@@ -73,6 +73,8 @@ See [`examples/example-output.md`](examples/example-output.md) for mock validato
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
 
+Shared terminology: [Common Language](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/common-language.md).
+
 - [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
 - [`marketing-ops-toolkit`](https://github.com/silvermanjared-web/marketing-ops-toolkit)
 - [`marketing-intelligence-agent`](https://github.com/silvermanjared-web/marketing-intelligence-agent)
