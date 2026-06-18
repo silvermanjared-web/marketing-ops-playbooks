@@ -14,6 +14,18 @@ These playbooks encode repeatable methods for the work that matters most: making
 
 They are designed to reduce variability across teams and improve consistency at scale.
 
+## Operating model
+
+```mermaid
+flowchart TD
+    Problem[Define the operating problem] --> Method[Choose a playbook or framework]
+    Method --> Inputs[Gather inputs]
+    Inputs --> Validate[Run validation or diagnostic steps]
+    Validate --> Findings[Classify findings]
+    Findings --> Decision[Recommend next action]
+    Decision --> Repeat[Reuse and improve the method]
+```
+
 ## What each playbook should provide
 
 Each playbook is designed to be:
