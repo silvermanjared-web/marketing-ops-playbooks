@@ -71,9 +71,11 @@ See [`examples/example-output.md`](examples/example-output.md) for mock validato
 
 ## Related repos
 
-- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os) — the operating-system hub that explains the broader growth architecture.
-- [`marketing-ops-toolkit`](https://github.com/silvermanjared-web/marketing-ops-toolkit) — practical scripts and tools that can operationalize these playbooks.
-- [`marketing-intelligence-agent`](https://github.com/silvermanjared-web/marketing-intelligence-agent) — the intelligence layer that can turn playbook findings into prioritized briefings.
+This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
+
+- [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
+- [`marketing-ops-toolkit`](https://github.com/silvermanjared-web/marketing-ops-toolkit)
+- [`marketing-intelligence-agent`](https://github.com/silvermanjared-web/marketing-intelligence-agent)
 
 ## Design philosophy
 
