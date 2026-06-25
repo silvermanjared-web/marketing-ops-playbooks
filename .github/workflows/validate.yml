@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate marketing ops playbooks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run UTM taxonomy validator positive case
+        run: python skills/utm-taxonomy-validator/validate.py --url "https://example.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-search"
+
+      - name: Run UTM taxonomy validator JSON output case
+        run: python skills/utm-taxonomy-validator/validate.py --url "https://example.com/?utm_source=linkedin&utm_medium=paid-social&utm_campaign=executive-brief" --json-output
