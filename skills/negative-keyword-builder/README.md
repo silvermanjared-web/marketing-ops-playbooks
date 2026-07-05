@@ -2,7 +2,7 @@
 
 ## Why Negative Keywords Matter
 
-Every paid search account leaks budget to irrelevant queries. The question is not whether it is happening — it is how much. In mature accounts, 10-20% of search spend goes to queries that will never convert. In new or poorly maintained accounts, that number can be 40% or higher.
+Every paid search account leaks budget to irrelevant queries. The question is not whether it is happening — it is how much. The share varies by account maturity, match-type strategy, query volume, and review cadence, so this tool treats waste as something to measure from the search term report rather than assume.
 
 Negative keywords are the fix. But most teams approach negation reactively — reviewing search term reports one query at a time, making one-off decisions, and missing the patterns. This tool takes a structured approach: classify queries by theme, evaluate each theme's performance in aggregate, and build negation lists that address categories of waste rather than individual queries.
 

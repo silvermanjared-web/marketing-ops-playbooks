@@ -25,3 +25,48 @@ jobs:
 
       - name: Run UTM taxonomy validator JSON output case
         run: python skills/utm-taxonomy-validator/validate.py --url "https://example.com/?utm_source=linkedin&utm_medium=paid-social&utm_campaign=executive-brief" --json-output
+
+      - name: Run repository guardrails
+        run: python scripts/validate_repo.py
+
+      - name: Run data sanity checker smoke test
+        run: |
+          cat > /tmp/data_sanity_checker.csv <<'CSV'
+          date,campaign,impressions,clicks,cost,conversions
+          2026-06-01,brand,1000,100,200,10
+          2026-06-02,brand,1100,110,210,11
+          CSV
+          python skills/data-sanity-checker/validate.py --file /tmp/data_sanity_checker.csv
+
+      - name: Run funnel data validator smoke test
+        run: |
+          cat > /tmp/funnel_data_validator.csv <<'CSV'
+          date,impressions,clicks,leads,qualified,opportunities,closed,source
+          2026-06-01,1000,100,30,20,10,5,paid_search
+          2026-06-02,900,90,27,18,9,4,paid_search
+          CSV
+          python skills/funnel-data-validator/validate.py --csv /tmp/funnel_data_validator.csv
+
+      - name: Run negative keyword builder smoke test
+        run: |
+          cat > /tmp/negative_keyword_builder.csv <<'CSV'
+          search_term,campaign,ad_group,impressions,clicks,cost,conversions
+          careers in marketing,search_us,adgroup_a,50,5,12.50,0
+          best project software,search_us,adgroup_a,60,6,30.00,2
+          CSV
+          python skills/negative-keyword-builder/classify.py --csv /tmp/negative_keyword_builder.csv
+
+      - name: Run performance media diagnostics smoke test
+        run: |
+          cat > /tmp/performance_media_diagnostics.csv <<'CSV'
+          date,campaign,impressions,clicks,cost,conversions
+          2026-06-01,brand,1000,100,100,10
+          2026-06-02,brand,1000,100,100,10
+          2026-06-03,brand,1000,100,100,10
+          2026-06-04,brand,1000,100,100,10
+          2026-06-05,brand,1000,100,100,10
+          2026-06-06,brand,1000,100,100,10
+          2026-06-07,brand,1000,100,100,10
+          2026-06-08,brand,1000,100,100,10
+          CSV
+          python skills/performance-media-diagnostics/diagnose.py --csv /tmp/performance_media_diagnostics.csv

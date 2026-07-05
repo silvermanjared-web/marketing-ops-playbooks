@@ -23,6 +23,8 @@ SENSITIVE_NAME = re.compile(
     r"(^|/)(\.env(\..*)?|\.env\.keys|client_secret.*\.json|credentials.*\.json|token.*\.json|tokens.*\.json|google[-_]ads\.ya?ml)$",
     re.IGNORECASE,
 )
+EXPORT_DATA_NAME = re.compile(r"(^|/).*\.(csv|tsv|xlsx?|parquet|jsonl)$", re.IGNORECASE)
+LOCAL_PATH_PATTERN = re.compile(r"/Users/[A-Za-z0-9._-]+/")
 ALLOW_TRACKED = {
     ".envrc",
     ".env.example",
@@ -49,6 +51,8 @@ def main() -> int:
 
     for rel in tracked:
         base = Path(rel).name
+        if EXPORT_DATA_NAME.search(rel):
+            failures.append(f"Tracked data export or report file: {rel}")
         if SENSITIVE_NAME.search(rel) and base not in ALLOW_TRACKED:
             normalized = rel.replace("\\", "/")
             if not (
@@ -69,6 +73,8 @@ def main() -> int:
             text = path.read_text(errors="ignore")
         except OSError:
             continue
+        if LOCAL_PATH_PATTERN.search(text):
+            failures.append(f"Local machine path reference in {rel}")
         for pattern in SECRET_PATTERNS:
             if pattern.search(text):
                 failures.append(f"Secret-like pattern in {rel}: {pattern.pattern}")
