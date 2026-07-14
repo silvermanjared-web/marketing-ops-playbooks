@@ -22,6 +22,10 @@ ENV/
 secrets.*
 credentials.*
 token.*
+*.pem
+*.key
+*.p12
+*.pfx
 
 # Data exports and private inputs
 *.csv
@@ -30,6 +34,9 @@ token.*
 *.xls
 *.parquet
 *.jsonl
+*.sqlite
+*.db
+*.hxd
 exports/
 private/
 local-data/
