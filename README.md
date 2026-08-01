@@ -92,3 +92,5 @@ Usage and rights: see [USAGE.md](USAGE.md).
 ## What this demonstrates
 
 This repo shows how marketing operations judgment can be converted into practical, reusable systems: documented methods, validation scripts, diagnostic frameworks, and structured playbooks that improve consistency across complex growth work.
+
+Part of the [Jared Silverman growth portfolio](https://github.com/silvermanjared-web) — see also [Marketing Ops Toolkit](https://github.com/silvermanjared-web/marketing-ops-toolkit) for the executable automation layer.
