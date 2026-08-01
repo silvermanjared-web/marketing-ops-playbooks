@@ -73,6 +73,8 @@ See [`examples/example-output.md`](examples/example-output.md) for mock validato
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
 
+This repository codifies repeatable operating methods and review standards. The [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate) is the companion publication control: it makes the decision to export, exclude, sanitize, or overlay private-derived material explicit before public release. The playbooks define how work should run; the gate demonstrates how selected private patterns can cross into the public portfolio safely.
+
 Shared terminology: [Common Language](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/common-language.md).
 
 Usage and rights: see [USAGE.md](USAGE.md).
@@ -80,6 +82,7 @@ Usage and rights: see [USAGE.md](USAGE.md).
 - [`growth-architecture-os`](https://github.com/silvermanjared-web/growth-architecture-os)
 - [`marketing-ops-toolkit`](https://github.com/silvermanjared-web/marketing-ops-toolkit)
 - [`marketing-intelligence-agent`](https://github.com/silvermanjared-web/marketing-intelligence-agent)
+- [`private-to-public-release-gate`](https://github.com/silvermanjared-web/private-to-public-release-gate)
 
 ## Design philosophy
 
