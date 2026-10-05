@@ -112,6 +112,13 @@ The canonical [AI Operating System Reference](https://github.com/silvermanjared-
 
 `marketing-intelligence-agent` applies that pattern to synthesis and routing. `marketing-ops-toolkit` applies it to deterministic execution and bounded mutation. This repository remains the methodology layer underneath both.
 
+
+## Federation
+
+This repository is an autonomous member of the public [Growth Architecture OS federation](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/public-federation.md). It remains independently usable while publishing explicit contracts for what it provides, what it can consume, and the authority it retains locally.
+
+See [FEDERATION.md](FEDERATION.md).
+
 ## Related repos
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
