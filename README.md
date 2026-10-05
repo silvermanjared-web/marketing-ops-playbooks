@@ -4,6 +4,8 @@ A structured set of repeatable playbooks for common marketing operations problem
 
 These playbooks turn recurring marketing operations work into documented, repeatable methods that can be taught, audited, and automated.
 
+The connective operating model is the **Full-Cycle Growth Loop**: **Brief → Plan → Execute → Test & Learn → Report & Diagnose → Feed Learning Forward → Better Brief**. The point is not to install a cookie-cutter process. The loop stays stable while the mechanics adapt to each organization's goals, maturity, channels, data, teams, and constraints.
+
 ## Why this exists
 
 Marketing operations breaks down when critical knowledge lives only in people's heads.
@@ -16,6 +18,26 @@ They are designed to reduce variability across teams and improve consistency at 
 
 ## Operating model
 
+The repository now has two complementary loops.
+
+### Full-cycle growth loop
+
+```mermaid
+flowchart LR
+    Brief[Brief] --> Plan[Plan]
+    Plan --> Execute[Execute]
+    Execute --> Test[Test & Learn]
+    Test --> Report[Report & Diagnose]
+    Report --> Learn[Feed Learning Forward]
+    Learn --> Brief
+```
+
+This is the strategic operating cycle: every execution cycle should improve the assumptions and decisions in the next one.
+
+See [Full-Cycle Growth Loop](frameworks/full-cycle-growth-loop.md) and the [Full-Cycle Learning Brief](templates/full-cycle-learning-brief.md).
+
+### Playbook execution loop
+
 ```mermaid
 flowchart TD
     Problem[Define the operating problem] --> Method[Choose a playbook or framework]
@@ -25,6 +47,8 @@ flowchart TD
     Findings --> Decision[Recommend next action]
     Decision --> Repeat[Reuse and improve the method]
 ```
+
+The execution loop governs an individual diagnostic or method. The full-cycle loop connects those methods into an ongoing growth system.
 
 ## What each playbook should provide
 
@@ -55,6 +79,17 @@ Strategic planning templates for recurring marketing operations work:
 | [CRO Test Planning](frameworks/cro-test-planning.md) | Phased conversion-rate optimization roadmap with hypothesis structure and success criteria |
 | [LTV/CAC Audit](frameworks/ltv-cac-audit.md) | Methodology for auditing unit economics models, formula integrity, data completeness, and anomaly detection |
 | [Competitive Analysis](frameworks/competitive-analysis.md) | Framework for assessing competitor positioning, messaging, and conversion architecture |
+| [Full-Cycle Growth Loop](frameworks/full-cycle-growth-loop.md) | End-to-end operating model connecting brief, plan, execution, testing, reporting, diagnosis, and feed-forward learning |
+
+## The compounding principle
+
+A linear campaign process ends with reporting. A growth operating system feeds what was learned back into the next brief and plan.
+
+That means reporting is not the finish line. It is the bridge into the next planning cycle.
+
+The framework has remained useful across very different organizations because the **principles are repeatable while the implementation is adaptable**. Channel mix, cadence, teams, tools, measurement maturity, and approval models can change. The learning loop does not.
+
+Over time, that creates compounding operating knowledge: stronger briefs, sharper allocation, better tests, cleaner execution, and faster diagnosis.
 
 ## How to use this repo
 
