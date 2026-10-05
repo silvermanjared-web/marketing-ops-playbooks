@@ -69,6 +69,14 @@ Start with the problem you are trying to diagnose.
 
 See [`examples/example-output.md`](examples/example-output.md) for mock validator outputs showing UTM taxonomy findings, funnel-data checks, severity levels, and recommended fixes.
 
+## AI operating-system relationship
+
+These playbooks define repeatable methods that can be exposed as capabilities without turning every method into an autonomous mutation.
+
+The canonical [AI Operating System Reference](https://github.com/silvermanjared-web/growth-architecture-os/tree/main/04-ai-systems/ai-operating-system-reference) explains the shared pattern: context, explicit capabilities, bounded execution, receipts, and human authority.
+
+`marketing-intelligence-agent` applies that pattern to synthesis and routing. `marketing-ops-toolkit` applies it to deterministic execution and bounded mutation. This repository remains the methodology layer underneath both.
+
 ## Related repos
 
 This repo is part of a connected public system. See the [GitHub Ecosystem Map](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md) for how the repos relate.
